@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Product Advertisement Platform</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Website Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="product.html">Products</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Welcome to Our Advertisement Platform</h1>
+            <p>Your gateway to discovering amazing products!</p>
+            <input type="text" id="searchBar" placeholder="Search for products..." oninput="filterProducts()">
+        </div>
+    </section>
+
+    <section class="featured-products">
+        <h2>Featured Products</h2>
+        <div class="product-grid">
+            <div class="product-card" data-name="Smartphone">
+                <img src="smartphone.jpg" alt="Smartphone">
+                <h3>Smartphone</h3>
+                <p>High-performance smartphone with great features.</p>
+                <a href="smartphone-details.html">View Details</a>
+            </div>
+            <div class="product-card" data-name="Headphones">
+                <img src="headphones.jpg" alt="Headphones">
+                <h3>Headphones</h3>
+                <p>Noise-cancelling headphones for immersive audio.</p>
+                <a href="headphones-details.html">View Details</a>
+            </div>
+            <div class="product-card" data-name="Laptop">
+                <img src="laptop.jpg" alt="Laptop">
+                <h3>Laptop</h3>
+                <p>Lightweight and powerful laptop for work and play.</p>
+                <a href="laptop-details.html">View Details</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Product Advertisement Platform. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
